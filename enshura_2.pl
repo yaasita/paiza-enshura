@@ -2,11 +2,13 @@
 use strict;
 use warnings;
 
-my $fist_line = <STDIN>;
-my $total=0;
+my $first_line = <STDIN>;
+my %sum;
 while (<STDIN>){
-    my ($t,$s,$p) = split(/\s/);
-    $total += ( $t - $s ) * $p if $t > $s;
+    my $dow = ($.-1)%7;
+    $dow = $dow == 0 ? 7 : $dow;
+    $sum{$dow} += $_;
 }
-print "$total\n";
-
+for (1..7){
+    print $sum{$_},"\n";
+}

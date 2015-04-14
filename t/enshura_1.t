@@ -8,13 +8,12 @@ use FindBin;
 chdir $FindBin::Bin;
 
 subtest 'example1' => sub { #{{{
-    my $result = `cat enkoi_1_ex1.dat | ../enkoi_1.pl`;
-    is 0+$result,20;
-
+    my $result = `cat enshura_1_ex1.dat | ../enshura_1.pl`;
+    is $result,"Paiza";
 }; #}}}
 subtest 'example2' => sub { #{{{
-    my $result = `cat enkoi_1_ex2.dat | ../enkoi_1.pl`;
-    is 0+$result,135;
+    my $result = `cat enshura_1_ex2.dat | ../enshura_1.pl`;
+    is $result,"aceghjln";
 }; #}}}
 done_testing;
 
