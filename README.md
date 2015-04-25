@@ -25,3 +25,4 @@ RENA
 https://paiza.jp/poh/enshura-rena-ending/3fa8dca6?o=70f5b1cb
 
 MINAMI
+https://paiza.jp/poh/enshura-minami-ending/5b9b8018?o=40315df5
