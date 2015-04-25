@@ -3,10 +3,10 @@ use strict;
 use warnings;
 use feature qw(say);
 
-my ($row, $column) = split(/\s+/,<DATA>);
+my ($row, $column) = split(/\s+/,<STDIN>);
 my @column;
 # 入力
-while (<DATA>){
+while (<STDIN>){
     s/2/0/g;
     my $i=0;
     for(split(/\s/)){
@@ -30,10 +30,3 @@ while ($column >= $i){
     print "@out\n";
     $i++;
 }
-
-__DATA__
-3 4
-1 0 2
-1 2 1
-1 2 2
-1 2 2
